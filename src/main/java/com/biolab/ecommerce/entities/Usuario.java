@@ -27,7 +27,6 @@ public class Usuario {
     private String telefone;
     @NotBlank @Size(min = 6)
     private String senha;
-    private String[] roles;
-
-
+    @Enumerated(EnumType.STRING)
+    private Role roles;
 }

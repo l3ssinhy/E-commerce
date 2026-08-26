@@ -1,18 +1,15 @@
 package com.biolab.ecommerce.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
+import jakarta.persistence.Id;
 
 import java.time.Instant;
 
 @Entity
-// substitui os getters e setters
+// substitui os getters, setters e toString
 @Data
 // substitui o contrutor com todos os argumentos
 @AllArgsConstructor
