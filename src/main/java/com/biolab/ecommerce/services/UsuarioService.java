@@ -1,7 +1,7 @@
 package com.biolab.ecommerce.services;
 
 import com.biolab.ecommerce.DTOs.UsuarioDTO;
-import com.biolab.ecommerce.entities.Role;
+import com.biolab.ecommerce.entities.enums.Role;
 import com.biolab.ecommerce.entities.Usuario;
 import com.biolab.ecommerce.repositories.UsuarioRepository;
 import org.springframework.stereotype.Service;

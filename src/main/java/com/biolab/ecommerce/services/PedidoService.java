@@ -2,7 +2,7 @@ package com.biolab.ecommerce.services;
 
 import com.biolab.ecommerce.DTOs.PedidoDTO;
 import com.biolab.ecommerce.entities.Pedido;
-import com.biolab.ecommerce.entities.StatusPedido;
+import com.biolab.ecommerce.entities.enums.StatusPedido;
 import com.biolab.ecommerce.entities.Usuario;
 import com.biolab.ecommerce.repositories.PedidoRepository;
 import com.biolab.ecommerce.repositories.UsuarioRepository;
@@ -30,4 +30,6 @@ public class PedidoService {
         pedidoRepository.save(p);
         return "Pedido deu green";
     }
+
+
 }
