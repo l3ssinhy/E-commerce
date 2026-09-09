@@ -7,6 +7,7 @@ import com.biolab.ecommerce.entities.Usuario;
 import com.biolab.ecommerce.repositories.PedidoRepository;
 import com.biolab.ecommerce.repositories.UsuarioRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.DeleteMapping;
 
 import java.time.Instant;
 
@@ -31,5 +32,11 @@ public class PedidoService {
         return "Pedido deu green";
     }
 
+    @DeleteMapping
+    public String deletarPedido(long id) {
+        Pedido pedido = pedidoRepository.findById(id).orElseThrow();
+        pedidoRepository.deleteById(id);
+        return "Excluído com sucesso";
+    }
 
 }
